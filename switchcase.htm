@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Swich Case</title>
+</head>
+<body>
+	<h1>Switch Case</h1>
+	<div id = "res"></div>
+	<script>
+	  var dt = new Date();
+	  var day = dt.getDay();
+
+	  var danme;
+	  switch (day){
+			case 0:
+			danme = "Sunday";
+			break;
+			case 1:
+			danme = "Monday";
+			break;
+			case 2:
+			danme = "Tueday";
+			break;
+			case 3:
+			danme = "Wednesday";
+			break;
+			case 4:
+			danme = "Thursday";
+			break;
+			case 5:
+			danme = "Friday";
+			break;
+			case 6:
+			danme = "Saturday";
+			break;
+			}
+		document.getElementById("res").innerHTML = "Today Is " +danme
+	</script>
+</body>
+</html>
